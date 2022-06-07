@@ -1,0 +1,30 @@
+<div class="sectionList">   
+   <table class="table">
+     <thead class="thead-dark" style="border-radius: 30px;">
+      <tr>
+        <th scope="col" style="color: white">#</th>
+        <th scope="col" style="color: white">Name</th>
+        <th scope="col" style="color: white">Phone number</th>
+        <th scope="col" style="color: white">Options</th>
+      </tr>
+    </thead>
+    <tbody>
+          {{#data}}
+      <tr>
+        <th scope="row" >{{id}}</th>
+        <td>{{nome}}</td>
+        <td>{{telefone}}</td>
+        <td>{{email}}</td>
+        <td>
+         
+          <a href="/usuario/{{id}}"class="listBtn fa fa-eye" type="button"></a>
+          <a href="/edit/{{id}}"class="heartBtn listBtn fa fa-heart" type="button" style="margin-left: 5px"></button>
+          <a href="/delete/{{id}}" class="listBtn fa fa-trash" type="button"></a>
+        </td>
+      </tr>
+        {{/data}} 
+    </tbody>
+  </table>
+  <a href="/" >Create</a>
+</div> 
+
