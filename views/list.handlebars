@@ -1,11 +1,13 @@
 <div class="sectionList">   
    <table class="table">
-     <thead class="thead-dark" style="border-radius: 30px;">
+    <thead class="" style="background-color:#B4191E; border-radius:20px;">
       <tr>
         <th scope="col" style="color: white">#</th>
         <th scope="col" style="color: white">Name</th>
-        <th scope="col" style="color: white">Phone number</th>
-        <th scope="col" style="color: white">Options</th>
+        <th scope="col" style="color: white">Telefone</th>
+        <th scope="col" style="color: white">email</th>
+        <th scope="col" style="color: white">endereço</th>
+        <th scope="col" style="color: white"></th>
       </tr>
     </thead>
     <tbody>
@@ -15,16 +17,17 @@
         <td>{{nome}}</td>
         <td>{{telefone}}</td>
         <td>{{email}}</td>
+        <td>{{endereco}}</td>
         <td>
          
-          <a href="/usuario/{{id}}"class="listBtn fa fa-eye" type="button"></a>
-          <a href="/edit/{{id}}"class="heartBtn listBtn fa fa-heart" type="button" style="margin-left: 5px"></button>
+          <a href="/usuarios/{{id}}"class="listBtn fa fa-eye" type="button"></a>
+          <a href="/edit/{{id}}"class="heartBtn listBtn fa fa-pencil " type="button" style="margin-left: 5px"></a>
           <a href="/delete/{{id}}" class="listBtn fa fa-trash" type="button"></a>
         </td>
       </tr>
         {{/data}} 
     </tbody>
   </table>
-  <a href="/" >Create</a>
+  <a href="/" class="btn btn-dark" style="float: right">Create</a>
 </div> 
 

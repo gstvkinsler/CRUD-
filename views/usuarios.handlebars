@@ -1,18 +1,23 @@
-<div class="section">
-    <div class="s1 row">
+
+
         {{!-- <div class=" col-sm-12 col-md-4"> --}}
             {{#data}}
-            <div class="">
-                nome: 
-                {{nome}}</br>
-                 endereço: 
-                {{endereco}}</br>
-                 telefone: 
-                {{telefone}}</br>
-            </div>
+            <div class="headerUser s1 text-center" style="margin-top: 80px">
+            <div class="card-header">
+            Informações do Usuario
+        </div>
+        <div class="card-body">
+            <h5 class="card-title">{{nome}}</h5>
+            <p class="card-text">nome:{{nome}}</p>
+            <p class="card-text">telefone:{{telefone}}</p>
+            <p class="card-text">endereco:{{endereco}}</p>
+            <p class="card-text">email:{{email}}</p>
+        </div>
+        <div class="card-footer text-muted">
+            <a href="/" class="btn btn-dark">Voltar</a>
+        </div>
+        </div>
             {{/data}}
         {{!-- </div> --}}
-    </div>
-    <button class="btn btn-dark" style="margin-top:15px" type="submit">Cadastrar</button>   
-</div>
+
 

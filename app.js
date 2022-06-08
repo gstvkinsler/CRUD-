@@ -33,7 +33,7 @@ app.listen(4004, function(req, res){
     console.log('servidor esta rodando')
 });
 
-app.post("/controllerForm",urlencodeParser,function(req,res){
+app.post("/insert",urlencodeParser,function(req,res){
     sql.query('insert into usuarios (nome,email,telefone,endereco) values(?,?,?,?)',[req.body.nome, req.body.email, req.body.telefone, req.body.endereco])
     res.redirect('/list')
 }); 
@@ -49,7 +49,7 @@ app.get("/delete/:id", function(req, res){
     res.redirect('/list')
 });
 
-app.get("/usuario/:id", function(req, res){
+app.get("/usuarios/:id", function(req, res){
     sql.query('select * from usuarios where id = ?',[req.params.id], function(err, results, fields){
         console.log(results)
         res.render('usuarios',{data:results})
@@ -57,15 +57,24 @@ app.get("/usuario/:id", function(req, res){
 
 });
 
-app.get("/edit/:id", function(req, res){
+app.get("/teste/:id", function(req, res){
     sql.query('select * from usuarios where id = ?',[req.params.id], function(err, results, fields){
         console.log(results)
         res.render('edit',{data:results})
     });
+});      
+
+app.get("/edit/:id", function(req, res){
+    sql.query('select * from usuarios where id = ?',[req.params.id], function(err, results, fields){
+        console.log(results)
+        res.render('edit',{data:results})
+        console.log(__dirname + '')
+    });
 });  
 
-app.post("/update/:id",urlencodeParser,function(req,res){
+app.post("/edit/update/:id",urlencodeParser,function(req,res){
     sql.query('update usuarios set nome = ?,email = ?,telefone = ?,endereco = ? where id = ?',[req.body.nome, req.body.email, req.body.telefone, req.body.endereco, req.params.id])
     res.redirect('/list')
     console.log(req.body)
 }); 
+

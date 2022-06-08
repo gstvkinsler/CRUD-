@@ -28,6 +28,7 @@ nav ul li a {
     text-decoration: none;
     color: rgb(0, 0, 0);
     font-size: 14px;
+    width: 100%;
 }
 
 nav ul li a:hover{
@@ -52,15 +53,70 @@ nav ul li a:hover{
 
 .section{
     margin: 0 auto;
-    width: 25%;
+    width: 500px;
+    height: 415px;
     align-items: center;
     margin-top: 80px;
+    border: 1px solid;
+    -webkit-box-shadow: 2px 11px 34px -3px rgba(0,0,0,0.58); 
+    box-shadow: 2px 11px 34px -3px rgba(0,0,0,0.58);
+    
+
 }
 
+.s1 row{
+    align-items: center;
+    background-color: aqua;
+    margin-left: 80px;
+    text-align: center;
+    width:80%;
+
+}
 .sectionList{
     margin: 0 auto;
-    width: 100%;  
+    width: 60%;  
     background-color: white;
+    -webkit-box-shadow: 2px 11px 34px -3px rgba(0,0,0,0.58); 
+    box-shadow: 2px 11px 34px -3px rgba(0,0,0,0.58);
+    border-radius: 10px;
+    margin-top: 10%;
+}
+
+.btn-dark{
+    -webkit-box-shadow: 2px 11px 34px -3px rgba(0,0,0,0.58); 
+ box-shadow: 2px 11px 34px -3px rgba(0,0,0,0.58);
+
+}
+
+.listBtn{
+    text-decoration: none;
+}
+
+
+
+.userDescription{
+    margin: 0 auto;
+
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+
+.headerSection{
+    margin-left: -15px;
+    width: 498px;
+    height: 109px;
+    background-color: #FFFFFF;
     -webkit-box-shadow: -1px 4px 15px -1px rgba(0,0,0,0.4); 
     box-shadow: -1px 4px 15px -1px rgba(0,0,0,0.4);
+
 }
+
+.idk{
+    margin-left: -15px;
+    width: 498px;
+    height: 69px;
+    padding: 10px;
+}
+
