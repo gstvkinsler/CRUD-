@@ -1,0 +1,8 @@
+CREATE TABLE usuarios (
+     id MEDIUMINT NOT NULL AUTO_INCREMENT,
+     nome VARCHAR(244) NOT NULL,
+     telefone VARCHAR(244) NOT NULL,
+     email VARCHAR(244) NOT NULL,
+     endereco VARCHAR(244) NOT NULL,
+     PRIMARY KEY (id)
+);
